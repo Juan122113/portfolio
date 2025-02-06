@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+    <title>Portfolio Web Developer</title>
 </head>
 <body>
 
     <h1>Portfolio.</h1>
 
     <h2>Páginas web.</h2>
+
+    <div class="container">
+        <!-- <h3>Mis Proyectos</h3> -->
+        
+        <div class="gallery">
+            <!-- Proyecto 1 -->
+            <div class="project" onclick="openLightbox('assets/-design-completed.jpg')">
+                <img src="assets/desktop-design-completed.jpg" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>E-commerce</h3>
+                    <p>Tienda online con React y Node.js</p>
+                </div>
+            </div>
+            
+            <!-- Repetir para más proyectos -->
+            <!-- Agrega más elementos .project aquí -->
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Vista ampliada">
+    </div>
 
     <ul>
         <li><a href="https://juan122113.github.io/tip-calculator-app-main/" target="_blank">Tip calculator app main</a></li>
