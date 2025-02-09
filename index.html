@@ -19,7 +19,8 @@
         
         <div class="gallery">
             <!-- Proyecto 1 -->
-            <div class="project" onclick="openLightbox('./assets/desktop-design-completed.jpg')">
+            <div class="project" data-iframe-url="https://juan122113.github.io/tip-calculator-app-main/" data-project-url="https://juan122113.github.io/tip-calculator-app-main/">
+                <!-- <img src="" alt=""> onclick="openLightbox('./assets/desktop-design-completed.jpg')"> -->
                 <img src="assets/desktop-design-completed.jpg" alt="Proyecto 1">
                 <div class="project-info">
                     <h3>E-commerce</h3>
@@ -33,9 +34,16 @@
     </div>
 
     <!-- Lightbox -->
-    <div class="lightbox" onclick="closeLightbox()">
-        <span class="close-btn">&times;</span>
-        <img src="" alt="Vista ampliada">
+    <div class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <iframe class="lightbox-iframe" allow="fullscreen"></iframe>
+        </div>
+        <div class="lightbox-controls">
+            <a href="" class="visit-btn" target="_blank" rel="noopener">Visitar sitio</a>
+        
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        </div>
+        <!-- <img src="" alt="Vista ampliada"> -->
     </div>
 
     <ul>
