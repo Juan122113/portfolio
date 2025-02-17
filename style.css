@@ -63,6 +63,10 @@ h1 {
     transform: translateY(0);
 }
 
+.h3-mobile {
+    display: none;
+}
+
 /* Lightbox */
 .lightbox {
     display: none;
@@ -135,3 +139,9 @@ h1 {
 /* a {
     color: #61ddff;
 } */
+
+ @media (max-width: 768px) {
+    .h3-mobile {
+        display: block;
+    }
+ }
