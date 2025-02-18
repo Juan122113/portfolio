@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background: #0033a1;
     color: #61ddff;
+    min-height: 100vh;
 }
 
 .container {
@@ -136,12 +141,16 @@ h1 {
     cursor: pointer;
 }
 
-/* a {
+a {
     color: #61ddff;
-} */
+}
 
  @media (max-width: 768px) {
     .h3-mobile {
         display: block;
+    }
+
+    .project:hover .project-info {
+        transform: translateY(100%);
     }
  }
