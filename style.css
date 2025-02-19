@@ -70,6 +70,7 @@ h1 {
 
 .h3-mobile {
     display: none;
+    margin: 0;
 }
 
 /* Lightbox */
@@ -141,9 +142,9 @@ h1 {
     cursor: pointer;
 }
 
-a {
+/* a {
     color: #61ddff;
-}
+} */
 
  @media (max-width: 768px) {
     .h3-mobile {
