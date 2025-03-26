@@ -142,9 +142,9 @@ h1 {
     cursor: pointer;
 }
 
-/* a {
+a {
     color: #61ddff;
-} */
+}
 
  @media (max-width: 768px) {
     .h3-mobile {
